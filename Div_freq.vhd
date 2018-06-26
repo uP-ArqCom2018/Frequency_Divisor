@@ -14,7 +14,7 @@ entity Div_freq is
       
      port (
          CLK_i: in std_logic;
-         CLK_o: out std_logic
+         CLK_ot: out std_logic
          );
 		
  end entity Div_freq;
@@ -27,7 +27,7 @@ signal CLK_out: std_logic :='0' ;
  
   begin
 
-  CLK_o<= CLK_out;
+  CLK_ot<= CLK_out;
 
 CLK: process (CLK_i) is
  begin
